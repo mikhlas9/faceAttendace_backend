@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-nodejs-backend
+    env: node
+    buildCommand: 'npm install && pip install -r requirements.txt'
+    startCommand: 'node src/index.js'
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PYTHON_ENV
+        value: production
