@@ -1,3 +1,4 @@
 opencv-python
 face_recognition
 numpy
+dlib==19.24.4 --global-option=build_ext --global-option=--disable-optimization
